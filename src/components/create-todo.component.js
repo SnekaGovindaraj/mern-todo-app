@@ -46,7 +46,7 @@ export default class CreateTodo extends Component {
 			todo_completed: this.state.todo_completed,
 		};
 		axios
-			.post('https://mern-todo-app-api.herokuapp.com/todoapp/add', newTodo)
+			.post('https://mern-app-todo.herokuapp.com/todoapp/add', newTodo)
 			.then(res => console.log(res.data));
 
 		this.setState({

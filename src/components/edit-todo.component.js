@@ -21,8 +21,7 @@ export default class EditTodo extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				'https://mern-todo-app-api.herokuapp.com/todoapp/' +
-					this.props.match.params.id,
+				'https://mern-app-todo.herokuapp.com/todoapp/' + this.props.match.params.id,
 			)
 			.then(response => {
 				this.setState({
@@ -71,8 +70,7 @@ export default class EditTodo extends Component {
 		};
 		axios
 			.post(
-				'https://mern-todo-app-api.herokuapp.com/todoappupdate/' +
-					this.props.match.params.id,
+				'https://mern-app-todo.herokuapp.com/todoapp/' + this.props.match.params.id,
 				obj,
 			)
 			.then(res => console.log(res.data));

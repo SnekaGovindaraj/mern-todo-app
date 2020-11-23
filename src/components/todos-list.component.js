@@ -25,7 +25,7 @@ export default class TodosList extends Component {
 
 	componentDidMount() {
 		axios
-			.get('https://mern-todo-app-api.herokuapp.com/todoapp')
+			.get('https://mern-app-todo.herokuapp.com/todoapp')
 			.then(response => {
 				this.setState({ todos: response.data });
 			})
@@ -36,7 +36,7 @@ export default class TodosList extends Component {
 
 	componentDidUpdate() {
 		axios
-			.get('https://mern-todo-app-api.herokuapp.com/todoapp')
+			.get('https://mern-app-todo.herokuapp.com/todoapp')
 			.then(response => {
 				this.setState({ todos: response.data });
 			})
