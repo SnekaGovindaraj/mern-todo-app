@@ -21,7 +21,7 @@ export default class EditTodo extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				'https://mern-todo-app-api.herokuapp.com/todoapp' +
+				'https://mern-todo-app-api.herokuapp.com/todoapp/' +
 					this.props.match.params.id,
 			)
 			.then(response => {
